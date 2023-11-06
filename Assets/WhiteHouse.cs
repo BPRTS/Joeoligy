@@ -11,7 +11,12 @@ public class WhiteHouse : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             health -= collision.gameObject.GetComponent<EnemyBehaviour>().damage;
+            
         }
         
+    }
+    private void Update()
+    {
+        Debug.Log(health);
     }
 }
